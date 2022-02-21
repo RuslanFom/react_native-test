@@ -80,7 +80,7 @@ const SignUp = () => {
 
     const handleSubmit = async () => {
         setReqLoading(true);
-        fetch(`http://192.168.0.159/api/createNewUser/`, {        /*тут менять в зависимости от того, откуда будет запуск приложения. У меня сейчас с локального компьютера, потому указан мой IP*/
+        fetch(`http://192.168.0.159:3001/api/createNewUser/`, {        /*тут менять в зависимости от того, откуда будет запуск приложения. У меня сейчас с локального компьютера, потому указан мой IP*/
             method: 'POST',
             body: JSON.stringify({
                 name: username,
